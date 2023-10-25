@@ -1,5 +1,7 @@
 /*
     Assignment 05
+    Gurmandeep Kaur
+    0830963
 */
 
 // ContentItem class definition
