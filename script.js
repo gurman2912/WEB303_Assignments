@@ -13,20 +13,6 @@ class ContentItem {
       this.category = category;
     }
   
-    updateContentItem(id, name, description, category) {
-      if (id === this.id) {
-        if (name !== null) {
-          this.name = name;
-        }
-        if (description !== null) {
-          this.description = description;
-        }
-        if (category !== null) {
-          this.category = category;
-        }
-      }
-    }
-  
     toString() {
       return `
         <div class="content-item-wrapper" id="contentitem-${this.id}">
