@@ -6,7 +6,7 @@
 
 // ContentItem class definition
 class ContentItem {
-    constructor(id, name, description, category) {
+    letructor(id, name, description, category) {
       this.id = id;
       this.name = name;
       this.description = description;
@@ -25,7 +25,7 @@ class ContentItem {
   }
   
   // Create an array of ContentItem instances
-  const contentItems = [
+  let contentItems = [
     new ContentItem(0, "Red Rose Bouquet", "Roses with beautiful accents of Babies Breath and stunning lush greenery. This cut flower bouquet is ready to be placed in a vase and admired.", "Bouquet"),
     new ContentItem(1, "Rainbow Crown", "Check out our rainbow flower crown selection for the very best in unique or custom, handmade pieces from our wreaths & tiaras shops.", "Jewelry"),
     new ContentItem(2, "The Home Box", "Introducing The Home Box! Our newest Gift Box with all the Home goodies you'll need. Think of a new homeowner, daughter getting her own place or gift for a friend!", "Gift Box"),
@@ -35,10 +35,10 @@ class ContentItem {
   
   // Add content items to the web page
 $(document).ready(function () {
-    const $contentItemList = $("#content-item-list");
+    let $contentItemList = $("#content-item-list");
   
     contentItems.forEach((item) => {
-      const $contentItem = $(item.toString());
+      let $contentItem = $(item.toString());
   
       // Customize the CSS for each content item
       $contentItem.css({
