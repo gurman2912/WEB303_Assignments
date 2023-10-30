@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Fan Page</title>
-    <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </head>
@@ -17,77 +16,89 @@
 
     <!-- Accordion 1 - Biography -->
     <h2>Biography</h2>
-    <div class="accordion">
-        <div class="accordion-section">
-            <div class="accordion-header">Early Life</div>
+    <ul class="accordion">
+        <li>
+            <button class="accordion-header">Early Life</button>
             <div class="accordion-content">
-                Nimrat Khaira was born in an Indian village. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Nimrat Khaira (born 8 August 1992) is an Indian singer, and actress known for her work in Punjabi- language music and films. Born in Gurdaspur, Khaira also started singing in third grade. She is the only child of her parents. She completed her schooling from D.A.V
             </div>
-        </div>
-        <div class="accordion-section">
-            <div class="accordion-header">Music Career</div>
+        </li>
+
+        <li>
+            <button class="accordion-header">Music Career</button>
             <div class="accordion-content">
-                She started her music career in 2015. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                She started her music career in 2015. She is the winner of Voice of Punjab season 3. She gained fame after the release of her single "Ishq Kacheri".She performed at Saras Mela, held in Bathinda. She hosted the third edition of Radio Mirchi Music Awards.
             </div>
-        </div>
-        <div class="accordion-section">
-            <div class="accordion-header">Achievements</div>
+        </li>
+        
+        <li>
+            <button class="accordion-header">Achievements</button>
             <div class="accordion-content">
-                Nimrat has won several awards for her music. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nimrat has won several awards for her music.She won Best female vocalist award for her duo "Dubai Wale Sheikh" from Manje Bistre at Brit Asia Awards and nominated at Filmare Punjabi Award. The song also peaked on UK Asian chart. Her single "Suit" entered top 20 in the chart.
             </div>
-        </div>
-    </div>
+        </li>
+    </ul>
 
     <!-- Accordion 2 - Discography -->
     <h2>Discography</h2>
-    <div class="accordion">
-        <div class="accordion-section">
-            <div class="accordion-header">Album 1</div>
+    <ul class="accordion">
+        <li>
+            <button class="accordion-header">Album 1</button>
             <div class="accordion-content">
-                Description of the first album. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Description of the first album. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto nesciunt. Totam provident sapiente aspernatur, cumque nesciunt recusandae assumenda quibusdam quam sequi minus error reiciendis adipisci fugit alias tenetur aliquid.
             </div>
-        </div>
-        <div class="accordion-section">
-            <div class="accordion-header">Album 2</div>
+        </li>
+
+        <li>
+            <button class="accordion-header">Album 2</button>
             <div class="accordion-content">
-                Description of the second album. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Description of the second album.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto nesciunt. Totam provident sapiente aspernatur, cumque nesciunt recusandae assumenda quibusdam quam sequi minus error reiciendis adipisci fugit alias tenetur aliquid.
             </div>
-        </div>
-        <div class="accordion-section">
-            <div class="accordion-header">Album 3</div>
+        </li>
+
+        <li>
+            <button class="accordion-header">Album 3</button>
             <div class="accordion-content">
-                Description of the third album. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Description of the third album.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto nesciunt. Totam provident sapiente aspernatur, cumque nesciunt recusandae assumenda quibusdam quam sequi minus error reiciendis adipisci fugit alias tenetur aliquid.
             </div>
-        </div>
-    </div>
+        </li>
+    </ul>
 
     <!-- Tabbed Section - Songs -->
     <h2>Songs</h2>
-    <div class="tabbed-section">
-        <div class="tab">
-            <a class="tab-button">Song 1</a>
-            <div class="tab-content">
-                Lyrics and information about Song 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </div>
-        </div>
-        <div class="tab">
-            <a class="tab-button">Song 2</a>
-            <div class="tab-content">
-                Lyrics and information about Song 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </div>
-        </div>
-        <div class="tab">
-            <a class="tab-button">Song 3</a>
-            <div class="tab-content">
-                Lyrics and information about Song 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </div>
-        </div>
+    <ul class="tabbed-section">
+
+        <li class="active">
+            <a class="tab-control" href="#tab1">Song 1</a>
+        </li>
+      
+        <li>
+            <a class="tab-control" href="#tab2">Song 2</a>
+        </li>
+      
+        <li>
+            <a class="tab-control" href="#tab3">Song 3</a> 
+        </li>
+    </ul>
+
+    <div class="tab-content active" id="tab1" >
+        Lyrics and information about Song 1.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto nesciunt. Totam provident sapiente aspernatur, cumque nesciunt recusandae assumenda quibusdam quam sequi minus error reiciendis adipisci fugit alias tenetur aliquid.
     </div>
 
+    <div class="tab-content" id="tab2">
+        Lyrics and information about Song 2.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto nesciunt. Totam provident sapiente aspernatur, cumque nesciunt recusandae assumenda quibusdam quam sequi minus error reiciendis adipisci fugit alias tenetur aliquid.
+    </div>
+
+    <div class="tab-content" id="tab3">
+        Lyrics and information about Song 3.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, iusto nesciunt. Totam provident sapiente aspernatur, cumque nesciunt recusandae assumenda quibusdam quam sequi minus error reiciendis adipisci fugit alias tenetur aliquid.
+    </div>
+
+
+
+
     <footer>
-        &copy; Gurmandeep Kaur
+        &copy; Copyright | Gurmandeep Kaur
     </footer>
     
 </body>
-
 </html>

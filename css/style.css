@@ -8,12 +8,15 @@ body {
 }
 
 header {
-    background-color: lightgrey;
+    background-color: lightgray;
     margin-top: 0;
     padding: 8px;
     text-align: center;
 }
  
+h2 {
+    text-align: center;
+}
 footer{
     text-align: center;
     padding: 15px;
@@ -24,41 +27,59 @@ footer{
 .accordion {
     border: 1px solid #ddd;
     margin-bottom: 10px;
+    list-style: none;
+    padding: 0;
 }
 
-.accordion-section {
-    border-bottom: 1px solid #ddd;
-}
 
 .accordion-header {
     background-color: #f0f0f0;
     padding: 10px;
     cursor: pointer;
+    text-align: left;
+    width: 100%;
+    border: 1px solid #ddd;
 }
 
 .accordion-content {
     padding: 10px;
     display: none;
+    background: #fff;
+    border: 1px solid #ddd;
 }
 
 /* Styles for Tabbed Section */
-
-.tab-button {
-    cursor: pointer;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-   
+.tabbed-section {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-/* Style the tab content */
+.tab-control {
+    background: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    flex: 1;
+    border: 1px solid #ddd;
+    text-decoration: none;
+}
+
+.tab-control.active {
+    background: #333;
+    color: #fff;
+}
+
 .tab-content {
     display: none;
-    padding: 20px;
-    border: 1px solid #333;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-top: 10px;
 }
 
-.tab {
-    display: inline;    
+.tab-content.active {
+    display: block;
 }

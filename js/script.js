@@ -1,20 +1,22 @@
 $(document).ready(function() {
-    // Accordion behavior
+    // Accordion
     $('.accordion-header').click(function() {
-        var content = $(this).next('.accordion-content');
-        $('.accordion-content').not(content).slideUp();
-        content.slideToggle();
+        // Close other open sections in the same accordion
+        $(this).parent().siblings().find('.accordion-content').slideUp();
+        // Toggle the content of the clicked section
+        $(this).next('.accordion-content').slideToggle();
     });
 
-    // Initially, show the first tab and hide the others
-    $('.tab-content:first').show();
-            
-    // When a tab button is clicked
-    $('.tab-button').click(function () {
+    // Tabbed Sections
+    $('.tab-control').click(function() {
+        // Remove the 'active' class from all tabs
+        $('.tab-control').removeClass('active');
+        // Add 'active' class to the clicked tab
+        $(this).addClass('active');
         // Hide all tab content
         $('.tab-content').hide();
-        
-        // Show the content associated with the clicked tab button
-        $(this).next('.tab-content').show();
+        // Show the content of the clicked tab
+        $($(this).attr('href')).show();
+        return false;
     });
 });
