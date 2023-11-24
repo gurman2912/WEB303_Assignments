@@ -1,0 +1,28 @@
+.highlight {
+    background-color: rgb(255, 194, 226);
+    color: rgb(19, 18, 18);
+  }
+
+  body{
+    background-color: bisque;
+  }
+
+  h1{
+    text-align: center;
+    background-color: gray;
+    color: white;
+    padding: 15px;
+  }
+
+  #charactersTable{
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 25px;
+  }
+
+  #charactersTable th {
+    background-color: cornflowerblue;
+    padding: 10px;
+  }

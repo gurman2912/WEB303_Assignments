@@ -1,0 +1,52 @@
+[
+    { 
+        "firstName": "Aamir", 
+        "lastName": "Khan",
+        "birthdate": "1965-03-14",
+        "from": "Bombay",
+        "profession": "Actor"
+    },
+
+    { 
+        "firstName": "Ajay",
+        "lastName": "Devgan", 
+        "birthdate": "1969-04-02",
+        "from": "Amritsar" ,
+        "profession": "Actor"
+    },
+    { 
+        "firstName": "Shah Rukh", 
+        "lastName": "Khan", 
+        "birthdate": "1965-11-02",
+        "from": "Peshawar",
+        "profession": "Actor"
+    },
+    { 
+        "firstName": "Deepika", 
+        "lastName": "Padukone", 
+        "birthdate": "1986-01-05",
+        "from": "Denmark",
+        "profession": "Actress"
+    },
+    { 
+        "firstName": "Kajol", 
+        "lastName": "Devgan", 
+        "birthdate": "1974-08-05",
+        "from": "Panchgani",
+        "profession":"Actress"
+    },
+    { 
+        "firstName": " Madhuri", 
+        "lastName": "Dixit", 
+        "birthdate": "1967-05-15",
+        "from" : "Bombay",
+        "profession":"Actress"
+    },
+    { 
+        "firstName": " Akshay", 
+        "lastName": "Kumar", 
+        "birthdate": "1967-09-09", 
+        "from": "Amritsar",
+        "profession":"Actor"
+    }
+]
