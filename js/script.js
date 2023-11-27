@@ -17,12 +17,13 @@ $(document).ready(function() {
     var searchTerm = $(this).val().toLowerCase();
     $('#charactersTable tbody tr').each(function() {
       var firstName = $(this).find('td:first').text().toLowerCase();
-      if (firstName.includes(searchTerm)) {
+      if (searchTerm && firstName.includes(searchTerm)) {
         $(this).addClass('highlight');
-      } else {
-        $(this).removeClass('highlight');
       }
     });
+    if (!searchTerm) {
+      $('#charactersTable tbody tr').removeClass('highlight');
+    }
   });
 
   // Filter functionality
